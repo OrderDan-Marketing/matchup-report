@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>心跳配對 名單男女年齡佔比|過去 1 個月與過去 2 個月</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;800&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#faf6f0;--ink:#191919;--ink2:#666666;--line:#e4ddd2;--grid:#e9e4dc;--m:#257de0;--f:#f47230;color-scheme:light}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;font-size:16px;line-height:1.7;overflow-x:hidden}
+.wrap{max-width:1120px;margin:0 auto;padding:40px 20px 56px}
+h1,h2{font-family:"Shippori Mincho","Noto Serif TC",serif;margin:0;font-weight:800;line-height:1.3}
+.eyebrow{font-size:14px;color:var(--ink2);letter-spacing:.12em;margin:0}
+h1{font-size:34px;margin-top:6px}
+.sub{color:var(--ink2);margin:8px 0 0}
+.mast{padding-bottom:24px;border-bottom:1px solid var(--line)}
+.block{margin-top:36px;padding-top:28px;border-top:1px solid var(--line)}
+.mast + .block{border-top:0;margin-top:28px;padding-top:0}
+.block h2{font-size:24px;font-weight:600}
+.block ul{margin:14px 0 0;padding-left:1.3em}
+.block li{margin:6px 0}
+.periods{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:36px}
+.period{background:rgba(255,255,255,.55);border:1px solid var(--line);padding:24px 22px;min-width:0}
+.period h2{font-size:26px;font-weight:600}
+.range{margin:6px 0 0;color:var(--ink2);font-variant-numeric:tabular-nums}
+.count{margin:4px 0 0;color:var(--ink2)}
+.big{font-size:44px;font-weight:700;color:var(--ink);line-height:1.2;font-variant-numeric:tabular-nums}
+h3{font-size:16px;font-weight:700;margin:26px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--grid)}
+.split{display:flex;gap:2px;height:22px;background:var(--bg)}
+.split i{display:block;height:100%}
+.m{background:var(--m)}.f{background:var(--f)}
+.splitlab{display:flex;justify-content:space-between;gap:12px;margin:6px 0 0;font-variant-numeric:tabular-nums;flex-wrap:wrap}
+.note{margin:0 0 8px;font-size:14px;color:var(--ink2)}
+.legend{margin:0 0 10px;display:flex;gap:18px;font-size:14px}
+.sw{display:inline-block;width:12px;height:12px;margin-right:6px;vertical-align:-1px}
+.arow{padding:10px 0;border-top:1px solid var(--grid)}
+.alab{font-weight:500;font-size:15px;margin-bottom:4px}
+.brow{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 112px;align-items:center;gap:8px;height:16px;margin-top:2px;outline-offset:2px}
+.track{height:12px;border-left:1px solid #cfc8bc;background:linear-gradient(to right,var(--grid) 1px,transparent 1px) 0 0/25% 100%;position:relative}
+.bar{display:block;height:12px;border-radius:0 4px 4px 0;min-width:2px}
+.blab{font-size:14px;line-height:16px;white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--ink)}
+.brow[data-tip]:hover::after,.brow[data-tip]:focus::after{content:attr(data-tip);position:absolute;left:0;bottom:calc(100% + 4px);background:#191919;color:#fff;font-size:13px;line-height:1.4;padding:4px 8px;white-space:nowrap;z-index:5;pointer-events:none;max-width:100%}
+.tblwrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}
+th,td{padding:8px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+thead th{background:#f1eadf;font-weight:500;text-align:center}
+tbody th{text-align:left;font-weight:500}
+td{text-align:right}
+tr.tot th,tr.tot td{font-weight:700}
+.foot{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--ink2);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media (max-width:767px){
+  .periods{grid-template-columns:1fr;gap:20px}
+  h1{font-size:28px}
+  .wrap{padding:28px 16px 48px}
+  .period{padding:20px 14px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <p class="eyebrow">心跳配對 MatchUp 名單統計</p>
+    <h1>名單男女年齡佔比</h1>
+    <p class="sub">過去 1 個月與過去 2 個月|統計日 2026/11/26</p>
+  </header>
+
+  <section class="block" id="key">
+    <h2>重點</h2>
+    <ul>
+      <li>過去 1 個月進來 206 筆名單,男 136 筆(66.0%)、女 70 筆(34.0%)。</li>
+      <li>過去 2 個月進來 352 筆名單,男 228 筆(64.8%)、女 124 筆(35.2%)。</li>
+      <li>兩個期間都是 51 歲以上最多:過去 1 個月 139 筆(67.5%),過去 2 個月 232 筆(65.9%)。</li>
+    </ul>
+  </section>
+
+  <div class="periods">
+    <section class="period" id="m1">
+      <h2>過去 1 個月</h2>
+      <p class="range">期間 2026/10/27 – 2026/11/26</p>
+      <p class="count"><span class="big">206</span> 筆名單</p>
+      <h3>男女比</h3>
+      <div class="split" role="img" aria-label="男 136 筆 66.0%,女 70 筆 34.0%"><i class="m" style="flex:136"></i><i class="f" style="flex:70"></i></div>
+      <p class="splitlab"><span>男 136 筆 66.0%</span><span>女 70 筆 34.0%</span></p>
+      <h3>各年齡組佔比</h3>
+      <p class="note">男性看佔男性名單的比例,女性看佔女性名單的比例</p>
+      <p class="legend"><span><i class="sw m"></i>男</span><span><i class="sw f"></i>女</span></p>
+      <div class="chart">
+      <div class="arow"><div class="alab">30 歲以下</div>
+        <div class="bars">
+          <div class="brow" tabindex="0" data-tip="男｜30 歲以下｜15 筆｜佔男性 11.0%"><div class="track"><i class="bar m" style="width:11.0%"></i></div><span class="blab"><b>11.0%</b>｜15 筆</span></div>
+          <div class="brow" tabindex="0" data-tip="女｜30 歲以下｜3 筆｜佔女性 4.3%"><div class="track"><i class="bar f" style="width:4.3%"></i></div><span class="blab"><b>4.3%</b>｜3 筆</span></div>
+        </div></div>
+      <div class="arow"><div class="alab">31–40 歲</div>
+        <div class="bars">
+          <div class="brow" tabindex="0" data-tip="男｜31–40 歲｜14 筆｜佔男性 10.3%"><div class="track"><i class="bar m" style="width:10.3%"></i></div><span class="blab"><b>10.3%</b>｜14 筆</span></div>
+          <div class="brow" tabindex="0" data-tip="女｜31–40 歲｜5 筆｜佔女性 7.1%"><div class="track"><i class="bar f" style="width:7.1%"></i></div><span class="blab"><b>7.1%</b>｜5 筆</span></div>
+        </div></div>
+      <div class="arow"><div class="alab">41–50 歲</div>
+        <div class="bars">
+          <div class="brow" tabindex="0" data-tip="男｜41–50 歲｜15 筆｜佔男性 11.0%"><div class="track"><i class="bar m" style="width:11.0%"></i></div><span class="blab"><b>11.0%</b>｜15 筆</span></div>
+          <div class="brow" tabindex="0" data-tip="女｜41–50 歲｜15 筆｜佔女性 21.4%"><div class="track"><i class="bar f" style="width:21.4%"></i></div><span class="blab"><b>21.4%</b>｜15 筆</span></div>
+        </div></div>
+      <div class="arow"><div class="alab">51 歲以上</div>
+        <div class="bars">
+          <div class="brow" tabindex="0" data-tip="男｜51 歲以上｜92 筆｜佔男性 67.6%"><div class="track"><i class="bar m" style="width:67.6%"></i></div><span class="blab"><b>67.6%</b>｜92 筆</span></div>
+          <div class="brow" tabindex="0" data-tip="女｜51 歲以上｜47 筆｜佔女性 67.1%"><div class="track"><i class="bar f" style="width:67.1%"></i></div><span class="blab"><b>67.1%</b>｜47 筆</span></div>
+        </div></div>
+      </div>
+      <h3>明細表</h3>
+      <div class="tblwrap"><table>
+        <thead><tr><th>年齡組</th><th>男 筆數</th><th>佔男性</th><th>女 筆數</th><th>佔女性</th><th>合計筆數</th><th>佔全部</th></tr></thead>
+        <tbody><tr><th scope="row">30 歲以下</th><td>15</td><td>11.0%</td><td>3</td><td>4.3%</td><td>18</td><td>8.7%</td></tr><tr><th scope="row">31–40 歲</th><td>14</td><td>10.3%</td><td>5</td><td>7.1%</td><td>19</td><td>9.2%</td></tr><tr><th scope="row">41–50 歲</th><td>15</td><td>11.0%</td><td>15</td><td>21.4%</td><td>30</td><td>14.6%</td></tr><tr><th scope="row">51 歲以上</th><td>92</td><td>67.6%</td><td>47</td><td>67.1%</td><td>139</td><td>67.5%</td></tr><tr class="tot"><th scope="row">合計</th><td>136</td><td>100%</td><td>70</td><td>100%</td><td>206</td><td>100%</td></tr></tbody>
+      </table></div>
+    </section>
+    <section class="period" id="m2">
+      <h2>過去 2 個月</h2>
+      <p class="range">期間 2026/9/27 – 2026/11/26</p>
+      <p class="count"><span class="big">352</span> 筆名單</p>
+      <h3>男女比</h3>
+      <div class="split" role="img" aria-label="男 228 筆 64.8%,女 124 筆 35.2%"><i class="m" style="flex:228"></i><i class="f" style="flex:124"></i></div>
+      <p class="splitlab"><span>男 228 筆 64.8%</span><span>女 124 筆 35.2%</span></p>
+      <h3>各年齡組佔比</h3>
+      <p class="note">男性看佔男性名單的比例,女性看佔女性名單的比例</p>
+      <p class="legend"><span><i class="sw m"></i>男</span><span><i class="sw f"></i>女</span></p>
+      <div class="chart">
+      <div class="arow"><div class="alab">30 歲以下</div>
+        <div class="bars">
+          <div class="brow" tabindex="0" data-tip="男｜30 歲以下｜22 筆｜佔男性 9.6%"><div class="track"><i class="bar m" style="width:9.6%"></i></div><span class="blab"><b>9.6%</b>｜22 筆</span></div>
+          <div class="brow" tabindex="0" data-tip="女｜30 歲以下｜3 筆｜佔女性 2.4%"><div class="track"><i class="bar f" style="width:2.4%"></i></div><span class="blab"><b>2.4%</b>｜3 筆</span></div>
+        </div></div>
+      <div class="arow"><div class="alab">31–40 歲</div>
+        <div class="bars">
+          <div class="brow" tabindex="0" data-tip="男｜31–40 歲｜15 筆｜佔男性 6.6%"><div class="track"><i class="bar m" style="width:6.6%"></i></div><span class="blab"><b>6.6%</b>｜15 筆</span></div>
+          <div class="brow" tabindex="0" data-tip="女｜31–40 歲｜10 筆｜佔女性 8.1%"><div class="track"><i class="bar f" style="width:8.1%"></i></div><span class="blab"><b>8.1%</b>｜10 筆</span></div>
+        </div></div>
+      <div class="arow"><div class="alab">41–50 歲</div>
+        <div class="bars">
+          <div class="brow" tabindex="0" data-tip="男｜41–50 歲｜34 筆｜佔男性 14.9%"><div class="track"><i class="bar m" style="width:14.9%"></i></div><span class="blab"><b>14.9%</b>｜34 筆</span></div>
+          <div class="brow" tabindex="0" data-tip="女｜41–50 歲｜36 筆｜佔女性 29.0%"><div class="track"><i class="bar f" style="width:29.0%"></i></div><span class="blab"><b>29.0%</b>｜36 筆</span></div>
+        </div></div>
+      <div class="arow"><div class="alab">51 歲以上</div>
+        <div class="bars">
+          <div class="brow" tabindex="0" data-tip="男｜51 歲以上｜157 筆｜佔男性 68.9%"><div class="track"><i class="bar m" style="width:68.9%"></i></div><span class="blab"><b>68.9%</b>｜157 筆</span></div>
+          <div class="brow" tabindex="0" data-tip="女｜51 歲以上｜75 筆｜佔女性 60.5%"><div class="track"><i class="bar f" style="width:60.5%"></i></div><span class="blab"><b>60.5%</b>｜75 筆</span></div>
+        </div></div>
+      </div>
+      <h3>明細表</h3>
+      <div class="tblwrap"><table>
+        <thead><tr><th>年齡組</th><th>男 筆數</th><th>佔男性</th><th>女 筆數</th><th>佔女性</th><th>合計筆數</th><th>佔全部</th></tr></thead>
+        <tbody><tr><th scope="row">30 歲以下</th><td>22</td><td>9.6%</td><td>3</td><td>2.4%</td><td>25</td><td>7.1%</td></tr><tr><th scope="row">31–40 歲</th><td>15</td><td>6.6%</td><td>10</td><td>8.1%</td><td>25</td><td>7.1%</td></tr><tr><th scope="row">41–50 歲</th><td>34</td><td>14.9%</td><td>36</td><td>29.0%</td><td>70</td><td>19.9%</td></tr><tr><th scope="row">51 歲以上</th><td>157</td><td>68.9%</td><td>75</td><td>60.5%</td><td>232</td><td>65.9%</td></tr><tr class="tot"><th scope="row">合計</th><td>228</td><td>100%</td><td>124</td><td>100%</td><td>352</td><td>100%</td></tr></tbody>
+      </table></div>
+    </section>
+  </div>
+
+  <section class="block" id="basis">
+    <h2>統計口徑</h2>
+    <ul>
+      <li>資料來源:名單試算表「心跳配對 MatchUp (優勝美地)」的「2025/3月表單」分頁,用「填表日期」欄篩選期間。</li>
+      <li>過去 1 個月是 2026/10/27 到 2026/11/26;過去 2 個月是 2026/9/27 到 2026/11/26,含過去 1 個月的 206 筆。</li>
+      <li>年齡用 2026 減出生年(「生日」欄)。「年齡」欄空白的 186 筆用同一算式補上。</li>
+      <li>年齡分 30 歲以下、31–40 歲、41–50 歲三組;51 歲以上另列一組,四組加起來是全部名單。</li>
+      <li>兩個期間的名單性別與出生年都有填,沒有無法判定的名單。</li>
+      <li>佔比四捨五入到小數一位,各組相加可能與 100% 差 0.1。</li>
+      <li>統計日當天(11/26)的名單還在進來,之後重算數字會增加。</li>
+    </ul>
+  </section>
+
+  <footer class="foot">
+    <span>Orderdan 簡單營銷 · 心跳配對 名單男女年齡佔比</span>
+    <span>統計日 2026/11/26</span>
+  </footer>
+</div>
+</body>
+</html>
